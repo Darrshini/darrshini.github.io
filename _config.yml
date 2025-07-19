@@ -13,9 +13,9 @@ title: Darrshini's Portfolio # This is what shows up in the tab of the browser
 
 # Hero Section
 name: Logadarrshini Kandaraj
-headline: headline message
+headline: Hey there!
 description: >- # dont remove this line. this will ignore all new lines until the next section
- I am a Robotics Systems Engineering student with a solid background in IT and cybersecurity. I am interested in developing secure, autonomous systems by integrating robotics, automation and software. Keen to apply skills in interdisciplinary projects focused on intelligent and efficient system design.
+Robotics Systems Engineering student with a background in IT and cybersecurity, interested in developing secure autonomous systems through robotics, automation, and software.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/avatar.jpg
