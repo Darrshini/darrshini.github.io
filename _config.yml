@@ -7,7 +7,7 @@
 
 # Main Page Setup
 
-title: Darrshini's Portfolio # This is what shows up in the tab of the browser
+title: Logadarrshini's Portfolio # This is what shows up in the tab of the browser
 
 
 
@@ -35,7 +35,7 @@ external-links:    # input only your own url slug. The icons with missing entrie
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills: 
   - category: Programming
-    languages:
+    tools:
     - C
     - C++
     - Python
@@ -48,12 +48,7 @@ skills:
     tools:
     - Fused Deposition Modeling (FDM) 3D printing
     - Breadboarding for circuit testing 
-  - category: Systems Engineering principles
-    tools:
-    - Root Cause Analysis (e.g., 5 Whys, Fishbone Diagram)
-    - DFMEA / PFMEA 
-    - Six Sigma methodologies
-    - Shain Red-X
+
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
@@ -64,12 +59,13 @@ formspree-key:   https://formspree.io/f/{8-digit key}
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 # ACTIVE PURPLE THEME (uncommented)
 colors:
-  text: "#3a3a3a"                   # Soft dark gray (better readability than pure black)
-  border: "#e2d1f9"                 # Very pale violet border
-  link: "#9b7cce"                   # Dusty violet links
-  highlight: "#7b5dc8"              # Muted violet for highlights
-  background: "#fcfaff"             # Off-white with violet tint
-  light_background: "#f5edff"       # Pale violet background
+  text: "#333333"                
+  border: "#c9a8f5"                
+  link: "#7b2cbf"                  
+  highlight: "#5a189a"            
+  background: "#f9f0ff"             
+  light_background: "#f3e5ff"       
+
 
 # COMMENTED-OUT THEME OPTIONS (for future reference)
 # basic theme:
