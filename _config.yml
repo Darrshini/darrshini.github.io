@@ -25,7 +25,7 @@ profile_image: ./assets/images/profile-image/avatar.jpg
 
 # Link your resume
 # You can place your resume in assets/resume/{resume file.pdf} or add external link such as pdf saved in google drive 
-resume-url: ./assets/resume/{resume file.pdf}
+resume-url: ./assets/resume/K.Logadarrshini_resume.pdf
 
 
 # Set up external links - this will show up as small icons next to your name.
@@ -64,13 +64,13 @@ formspree-key:   https://formspree.io/f/{8-digit key}
 
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
-colors: # this is the basic theme
-  text: "#1a1c20"
-  border: "#ddd"
-  link: "#4a76ee"
-  highlight: "#0c0cf2"
-  background: "#ffffff"
-  light_background: "#f3f5fb"
+colors: 
+  text: "#2d2d2d"                   # Dark gray for text (better readability)
+  border: "#e0d6eb"                 # Light purple border
+  link: "#8a2be2"                   # Purple links (Violet color)
+  highlight: "#6a0dad"              # Darker purple for highlights
+  background: "#f9f6ff"             # Very light purple background
+  light_background: "#f2eaff"       # Slightly darker light background
 
 # A few examples. 
 basic theme:
