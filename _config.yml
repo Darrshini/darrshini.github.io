@@ -64,47 +64,47 @@ formspree-key:   https://formspree.io/f/{8-digit key}
 
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
-colors: 
-  text: "#2d2d2d"                   # Dark gray for text (better readability)
-  border: "#e0d6eb"                 # Light purple border
-  link: "#8a2be2"                   # Purple links (Violet color)
-  highlight: "#6a0dad"              # Darker purple for highlights
-  background: "#f9f6ff"             # Very light purple background
-  light_background: "#f2eaff"       # Slightly darker light background
-
-# A few examples. 
-basic theme:
-  text: "#1a1c20"
-  border: "#ddd"
-  link: "#4a76ee"
-  highlight: "#0c0cf2"
-  background: "#ffffff"
-  light_background: "#f3f5fb"
-  
-mint theme:
-  text: "#2c3333"
-  border: "#e0f2ef"
-  link: "#40b3a2"
-  highlight: "#2a9d8f"
-  background: "#f7fbfa"
-  light_background: "#f0f9f7"
-  
-lemon theme:
-  text: "#2d2926"
-  border: "#f7f3e3"
-  link: "#ffc94d"
-  highlight: "#ffb800"
-  background: "#fffdf5"
-  light_background: "#fff9e6"
-  
-pink theme:
+# ACTIVE PURPLE THEME (uncommented)
+colors:
   text: "#2d2d2d"
-  border: "#f8e2e2"
-  link: "#ff8fa3"
-  highlight: "#ff4d6d"
-  background: "#fff8f8"
-  light_background: "#fff5f6"
+  border: "#d8b4fe" 
+  link: "#7e22ce"
+  highlight: "#581c87"
+  background: "#faf5ff"
+  light_background: "#f3e8ff"
 
+# COMMENTED-OUT THEME OPTIONS (for future reference)
+# basic theme:
+#   text: "#1a1c20"
+#   border: "#ddd"
+#   link: "#4a76ee"
+#   highlight: "#0c0cf2"
+#   background: "#ffffff"
+#   light_background: "#f3f5fb"
+  
+# mint theme:
+#   text: "#2c3333"
+#   border: "#e0f2ef"
+#   link: "#40b3a2"
+#   highlight: "#2a9d8f"
+#   background: "#f7fbfa"
+#   light_background: "#f0f9f7"
+  
+# lemon theme:
+#   text: "#2d2926"
+#   border: "#f7f3e3"
+#   link: "#ffc94d"
+#   highlight: "#ffb800"
+#   background: "#fffdf5"
+#   light_background: "#fff9e6"
+  
+# pink theme:
+#   text: "#2d2d2d"
+#   border: "#f8e2e2"
+#   link: "#ff8fa3"
+#   highlight: "#ff4d6d"
+#   background: "#fff8f8"
+#   light_background: "#fff5f6"
 
 
 
