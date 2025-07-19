@@ -66,12 +66,12 @@ formspree-key:   https://formspree.io/f/{8-digit key}
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 # ACTIVE PURPLE THEME (uncommented)
 colors:
-  text: "#2d2d2d"
-  border: "#d8b4fe" 
-  link: "#7e22ce"
-  highlight: "#581c87"
-  background: "#faf5ff"
-  light_background: "#f3e8ff"
+  text: "#3a3a3a"                   # Soft dark gray (better readability than pure black)
+  border: "#e2d1f9"                 # Very pale violet border
+  link: "#9b7cce"                   # Dusty violet links
+  highlight: "#7b5dc8"              # Muted violet for highlights
+  background: "#fcfaff"             # Off-white with violet tint
+  light_background: "#f5edff"       # Pale violet background
 
 # COMMENTED-OUT THEME OPTIONS (for future reference)
 # basic theme:
