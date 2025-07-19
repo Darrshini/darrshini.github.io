@@ -15,7 +15,7 @@ title: Logadarrshini's Portfolio # This is what shows up in the tab of the brows
 name: Logadarrshini Kandaraj
 headline: Welcome to my portfolio!
 description: >- # dont remove this line. this will ignore all new lines until the next section
-Robotics Systems Engineering student with a background in IT and cybersecurity, interested in developing secure autonomous systems through robotics, automation, and software.
+  Robotics Systems Engineering student with a background in IT and cyberseucirty, interested in developing secure autonomous systems through robotics, automation and software.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/avatar.jpg
@@ -33,10 +33,10 @@ external-links:    # input only your own url slug. The icons with missing entrie
   github: darrshini    # https://github.com/{your url slug}  
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
-skills: 
+skills:
   - category: Programming
     tools:
-    - C 
+    - C
     - C++
     - Python
     - SPIN
@@ -47,7 +47,7 @@ skills:
   - category: Prototyping
     tools:
     - Fused Deposition Modeling (FDM) 3D printing
-    - Breadboarding for circuit testing 
+    - Breadboarding for circuit testing
 
 
 
