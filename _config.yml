@@ -15,9 +15,7 @@ title: Darrshini's Portfolio # This is what shows up in the tab of the browser
 name: Logadarrshini Kandaraj
 headline: headline message
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  Write an awesome intro and discuss your highlights and qualification. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ I am a Robotics Systems Engineering student with a solid background in IT and cybersecurity. I am interested in developing secure, autonomous systems by integrating robotics, automation and software. Keen to apply skills in interdisciplinary projects focused on intelligent and efficient system design.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/avatar.jpg
