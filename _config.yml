@@ -13,7 +13,7 @@ title: Logadarrshini's Portfolio # This is what shows up in the tab of the brows
 
 # Hero Section
 name: Logadarrshini Kandaraj
-headline: Hey there!
+headline: Welcome to my portfolio!
 description: >- # dont remove this line. this will ignore all new lines until the next section
 Robotics Systems Engineering student with a background in IT and cybersecurity, interested in developing secure autonomous systems through robotics, automation, and software.
 
@@ -36,7 +36,7 @@ external-links:    # input only your own url slug. The icons with missing entrie
 skills: 
   - category: Programming
     tools:
-    - C
+    - C 
     - C++
     - Python
     - SPIN
