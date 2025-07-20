@@ -712,7 +712,7 @@ footer p {
 /* Code Block Styling */
 /* Enhanced Code Block Styling */
 .post-view .content pre {
-    background-color: #d0d0d0 !important;  /* Dark grey */
+    background-color: #f8f8f8 !important;  /* light grey */
     border-radius: 6px;
     padding: 1.2rem;
     margin: 1.5rem 0;
