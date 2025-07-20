@@ -16,7 +16,7 @@ main-image: /Limo-top-AgileX.webp
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Terminal1.jpg, /assets/images/kinetic_rain.jpg"  
-     height="300" 
+     height="350" 
   %}
 </div>
 
@@ -26,7 +26,7 @@ For this project, our goal was to create an autonomous navigation system using t
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design_solidworks.jpg" 
-     height="400" 
+     height="350" 
   %}
 </div>
 <span style="font-size: 10px">Team-designed testing arena (left) and Designed in Solidworks (right)</span>
@@ -35,7 +35,7 @@ For this project, our goal was to create an autonomous navigation system using t
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Final_arena_design_solidworks.jpg, /assets/images/Team7_Arena.jpg" 
-     height="400" 
+     height="350" 
   %}
 </div>
 <span style="font-size: 10px">Final design plan in SolidWorks (left) and implemented design (right)</span>
