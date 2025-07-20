@@ -57,7 +57,7 @@ skills:
     - SLAM integration (GMapping, RTAB-Map)
     - move_base for autonomous navigation
     - Costmap configuration (local & global)
-    - Sensor integration ( LIDAR, depth cameras like Orbbec)
+    - Sensor integration ( LIDAR, depth cameras such as Orbbec)
 
 
 
