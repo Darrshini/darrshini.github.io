@@ -710,24 +710,30 @@ footer p {
 }
 
 /* Code Block Styling */
+/* Enhanced Code Block Styling */
 .post-view .content pre {
-    background-color: #f8f8f8 !important; /* Light grey */
+    background-color: #e8e8e8 !important;  /* Darker grey */
     border-radius: 6px;
-    padding: 1rem;
+    padding: 1.2rem;
     margin: 1.5rem 0;
     overflow-x: auto;
-    border-left: 4px solid var(--highlight-color); /* Purple accent */
+    border-left: 4px solid var(--highlight-color);
+    font-weight: 500;  /* Semi-bold */
 }
 
 .post-view .content code {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.92em;
     color: #333;
-    background: transparent !important;
+    font-weight: 500;  /* Semi-bold */
+    line-height: 1.5;
 }
 
-.post-view .content .highlight {
-    background: transparent !important;
+/* Syntax highlighting colors */
+.post-view .content .highlight .kn,  /* keywords */
+.post-view .content .highlight .k {   /* keywords */
+    font-weight: 600;  /* Bold for keywords */
+    color: #7b2cbf;    /* Purple to match theme */
 }
 
 .youtube-container {
