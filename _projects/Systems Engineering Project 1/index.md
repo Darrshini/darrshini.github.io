@@ -19,7 +19,7 @@ For this project, our goal was to create an autonomous navigation system using t
 
 ### **Initial Arena Design**
 {% include image-gallery.html 
-   images="/assets/images/Initial_design_plan.jpg", /assets/images/Initial_design_solidworks.jpg" 
+   images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design_solidworks.jpg" 
    height="400" 
 %}
 <span style="font-size: 10px">Team-designed testing arena (left) and Designed in Solidworks (right)</span>
