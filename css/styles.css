@@ -710,30 +710,41 @@ footer p {
 }
 
 /* Code Block Styling */
-/* Enhanced Code Block Styling */
+/* Updated Code Block Styling */
 .post-view .content pre {
-    background-color: #f8f8f8 !important;  /* light grey */
+    background-color: #f8fafb !important;  /* Crisp blue-tinged white */
     border-radius: 6px;
     padding: 1.2rem;
     margin: 1.5rem 0;
     overflow-x: auto;
     border-left: 4px solid var(--highlight-color);
-    font-weight: 500;  /* Semi-bold */
+    font-weight: 500;
+    /* Neutralize yellow tint */
+    filter: brightness(0.98) saturate(0.9);
 }
 
 .post-view .content code {
     font-family: 'Fira Code', 'Courier New', monospace;
     font-size: 0.92em;
-    color: #222;  /* Darker text */
-    font-weight: 500;  /* Semi-bold */
+    color: #2d3748;  /* Dark slate gray - better contrast */
+    font-weight: 500;
     line-height: 1.5;
+    background: transparent !important;
 }
 
-/* Syntax highlighting colors */
+/* Enhanced Syntax Highlighting */
 .post-view .content .highlight .kn,  /* keywords */
 .post-view .content .highlight .k {   /* keywords */
-    font-weight: 600;  /* Bold for keywords */
-    color: #7b2cbf;    /* Purple to match theme */
+    font-weight: 600;
+    color: #6b46c1;  /* Slightly softer purple */
+}
+
+/* Add these for better syntax contrast */
+.post-view .content .highlight .mi {  /* numbers */
+    color: #d03800;
+}
+.post-view .content .highlight .s {   /* strings */
+    color: #0a6e0a;
 }
 
 .youtube-container {
