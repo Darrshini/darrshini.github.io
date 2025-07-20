@@ -53,7 +53,14 @@ skills:
   - category: Robot Operating System
     tools:
     - ROS 1 (Melodic)
-    - RTAB-Map
+    - RViz
+    - SLAM integration (GMapping, RTAB-Map)
+    - move_base for autonomous navigation
+    - Costmap configuration (local & global)
+    - Sensor integration ( LIDAR, depth cameras like Orbbec)
+
+
+
 
 
 
