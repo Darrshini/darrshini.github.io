@@ -49,6 +49,7 @@ skills:
     - Fused Deposition Modeling (FDM) 3D printing
     - Breadboarding for circuit testing
   - category: Robot Operating System
+    tools:
     - ROS 1 (Melodic)
     - RTAB-Map
 
