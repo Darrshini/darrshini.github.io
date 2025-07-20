@@ -39,7 +39,7 @@ skills:
     - C
     - C++
     - Python
-    - SPIN
+    - Spin
   - category: 3D Modeling
     tools:
     - Solidworks
@@ -48,6 +48,8 @@ skills:
     tools:
     - Fused Deposition Modeling (FDM) 3D printing
     - Breadboarding for circuit testing
+  - category: Robot Operating System
+    - ROS 1 (Melodic)
 
 
 
