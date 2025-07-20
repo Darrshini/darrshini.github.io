@@ -7,6 +7,7 @@ skills:
   - ROS 1 (Melodic)
   - RTAB-Map SLAM
   - Python
+  - move_base navigation stack
 
 main-image: /limo_robot.jpg
 ---
