@@ -25,7 +25,7 @@ For this project, our goal was to create an autonomous navigation system using t
 ### Initial Arena Design
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
-     images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design_solidworks.jpg" 
+     images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design.jpg" 
      height="350" 
   %}
 </div>
@@ -34,7 +34,7 @@ For this project, our goal was to create an autonomous navigation system using t
 ### Final Arena Design
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
-     images="/assets/images/Final_Arena_Solidworks.jpg, /assets/images/Team7_Arena.jpg" 
+     images="/assets/images/Final_Arena_Solidworks.png, /assets/images/Team7_Arena.jpg" 
      height="350" 
   %}
 </div>
