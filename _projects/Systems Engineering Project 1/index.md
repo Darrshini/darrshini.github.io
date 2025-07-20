@@ -13,23 +13,31 @@ main-image: /Limo-top-AgileX.webp
 
 ---
 ## Project Overview
-{% include image-gallery.html images="/assets/images/Terminal1.jpg, /assets/images/kinetic_rain.jpg"  height="400" %}
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+  {% include image-gallery.html 
+     images="/assets/images/Terminal1.jpg, /assets/images/kinetic_rain.jpg"  
+     height="400" 
+  %}
+</div>
 
-For this project, our goal was to create an autonomous navigation system using the Agilex LIMO robot in a team-designed arena. We based the layout on Changi Airport Terminal 1, including recognizable features like the iconic Kinetic Rain setup to make it more engaging and realistic. The idea was to build a fun and meaningful environment where the robot could map the area using RTAB-Map SLAM and move between waypoints while avoiding obstacles using the move_base navigation stack. 
+For this project, our goal was to create an autonomous navigation system...
 
-### **Initial Arena Design**
-{% include image-gallery.html 
-   images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design_solidworks.jpg" 
-   height="400" 
-%}
+### Initial Arena Design
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+  {% include image-gallery.html 
+     images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design_solidworks.jpg" 
+     height="400" 
+  %}
+</div>
 <span style="font-size: 10px">Team-designed testing arena (left) and Designed in Solidworks (right)</span>
 
-
-### **Final Arena Design**
-{% include image-gallery.html 
-   images="/assets/images/Final_arena_design_solidworks.jpg, /assets/images/Team7_Arena.jpg" 
-   height="400" 
-%}
+### Final Arena Design
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+  {% include image-gallery.html 
+     images="/assets/images/Final_arena_design_solidworks.jpg, /assets/images/Team7_Arena.jpg" 
+     height="400" 
+  %}
+</div>
 <span style="font-size: 10px">Final design plan in SolidWorks (left) and implemented design (right)</span>
 
 
