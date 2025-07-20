@@ -8,7 +8,7 @@ skills:
   - RTAB-Map SLAM
   - Python
 
-main-image: /Limo-top-AgileX.webp
+main-image: /limo_robot.jpg
 ---
 
 ---
