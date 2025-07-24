@@ -44,7 +44,13 @@ For this project, our goal was to create an autonomous navigation system using t
 
 ---
 ## Using RTAB-Mapping for Mapping the Arena
-
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+  {% include image-gallery.html 
+     images="/assets/images/completed_map.jpg, /assets/images/completed_map_navigation.jpg" 
+     height="350" 
+  %}
+</div>
+The images above show the map that is displayed in the Rviz tool; we have mapped using RTAB-Map
 ---
 
 ## Technical Implementation
