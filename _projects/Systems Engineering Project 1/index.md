@@ -13,40 +13,43 @@ main-image: /limo_robot.jpg
 ---
 
 ---
-## Project Overview
+## Overview
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Terminal1.jpg, /assets/images/kinetic_rain.jpg"  
-     height="350" 
+     height="375" 
   %}
 </div>
 
 For this project, our goal was to create an autonomous navigation system using the Agilex LIMO robot in a team-designed arena. We based the layout on Changi Airport Terminal 1, including recognizable features like the iconic Kinetic Rain setup to make it more engaging and realistic. The idea was to build a fun and meaningful environment where the robot could map the area using RTAB-Map SLAM and move between waypoints while avoiding obstacles using the move_base navigation stack. 
 
-### Initial Arena Design
+### **Initial Arena Design**
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
-     images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_design.jpg" 
-     height="350" 
+     images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_Design_Solidworks.png" 
+     height="375" 
   %}
 </div>
-<span style="font-size: 10px">Team-designed testing arena (left) and Designed in Solidworks (right)</span>
+As seen in the images above, our team initially planned for a more complex design that included two levels, ramps, and gantries. 
 
-### Final Arena Design
+### **Final Arena Design**
 <div class="arena-slideshow-container">
 
 {% include image-gallery.html 
-   images="/assets/images/Final_Arena_Solidworks.png, /assets/images/Team7_Arena.jpg, /assets/images/Arena_Entrance.jpg, /assets/images/Arena_Windows.jpg, /assets/images/Arena_KineticRain.jpg"
+   images="/assets/images/Final_Design_Solidworks.png, /assets/images/Team7_Arena.jpg, /assets/images/Arena_Entrance.jpg, /assets/images/Arena_Windows.jpg, /assets/images/Arena_KineticRain.jpg"
    height="500"
    mode="slideshow"
    captions="Solidworks Final Design|Arena Side view|Arena Entrance view|Arena Top View|Arena Kinetic Rain"
 %}
 </div>
 
+After evaluating its feasibility and considering the time and budget constraints, we decided to go with a simpler design. The updated design still met the project requirements such as ensuring the Limo Robot can pass through the center of the plot, provided enough challenges for the LIMO robot to navigate through, and effectively represented the key elements of Changi Terminal 1.
 
 
 ---
-## Using RTAB-Mapping for Mapping the Arena
+## Mapping the Class Arena
+
+### **Using RTAB-Mapping** 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/completed_map.jpg, /assets/images/completed_map_navigation.jpg" 
@@ -56,7 +59,7 @@ For this project, our goal was to create an autonomous navigation system using t
 The images above show the map that is displayed in the Rviz tool; we have mapped using RTAB-Map
 ---
 
-## Technical Implementation
+## Navigation Code Implementation
 
 ### **Core Architecture**
 ```python
