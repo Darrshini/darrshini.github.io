@@ -49,15 +49,15 @@ After evaluating its feasibility and considering the time and budget constraints
 ## Mapping the Class Arena
 The project required us to design an arena that not only allowed our LIMO robot to navigate through our team’s plot but also to move seamlessly across other teams’ plots. The robot needed to be able to pass through the central point of each plot in the class’s combined arena while navigating around the various obstacles placed within each area.
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Class_arena.jpg" 
-     height="400" 
+     height="450" 
   %}
 </div>
 
 ### **Using RTAB-Mapping** 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/completed_map.jpg, /assets/images/completed_map_navigation.jpg" 
      height="400" 
@@ -158,9 +158,12 @@ def create_goal(self, x, y, yaw):
     q = quaternion_from_euler(0, 0, float(yaw))
 
 ```
-**Why it’s important:**
+**How it works:**
 
  - Converts (x, y, yaw) into a proper ROS navigation goal in the map frame.
  - Uses quaternion_from_euler to get the correct orientation so the robot faces the right way when it arrives.
+
+---
+
 
 This project gave me and my team valuable hands-on experience with multi-waypoint navigation using ROS 1, implementing fault recovery mechanisms, and designing flexible user input. It served as a strong foundation for understanding how autonomous robots can plan and adapt in real-world scenarios.
