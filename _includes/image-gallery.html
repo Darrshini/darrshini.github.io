@@ -1,14 +1,121 @@
-{% assign image_paths = include.images | split: ", " %}
-{% assign gallery_height = include.height | default: "300" %}
+{% assign images = include.images | split: "," %}
+{% assign height = include.height | default: "400" %}
+{% assign mode = include.mode | default: "grid" %}
 
-<div class="image-gallery" style="--gallery-height: {{ gallery_height }}px;">
-  {% for image_path in image_paths %}
-    {% assign image_name = image_path | strip %}
-    <img 
-        src="{{ image_name }}" 
-        alt="{{ image_name | split: '/' | last }}" 
-        loading="lazy"
-        onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');"
-    />
+<div class="media-container {% if mode == 'slideshow' %}slideshow{% endif %}" 
+     style="--gallery-height: {{ height }}px">
+     
+  {% for image in images %}
+    {% assign image_name = image | strip %}
+    <div class="media-item {% if mode == 'slideshow' and forloop.first %}active{% endif %}">
+      <img src="{{ image_name }}" 
+           alt="{{ image_name | split: '/' | last | replace: '_', ' ' | remove: '.jpg' | capitalize }}"
+           loading="lazy"
+           style="height: {{ height }}px">
+      {% if include.captions %}
+        <p class="caption">{{ include.captions[forloop.index0] }}</p>
+      {% endif %}
+    </div>
   {% endfor %}
+
+  {% if mode == 'slideshow' %}
+    <button class="slideshow-nav prev" aria-label="Previous image">❮</button>
+    <button class="slideshow-nav next" aria-label="Next image">❯</button>
+  {% endif %}
 </div>
+
+<style>
+.media-container {
+  position: relative;
+  margin: 1.5rem 0;
+}
+/* Grid mode */
+.media-container:not(.slideshow) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+/* Slideshow mode */
+.media-container.slideshow {
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.media-container.slideshow .media-item {
+  display: none;
+  text-align: center;
+}
+.media-container.slideshow .media-item.active {
+  display: block;
+}
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #666;
+}
+.slideshow-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s;
+}
+.slideshow-nav:hover {
+  background: rgba(0,0,0,0.8);
+}
+.slideshow-nav.prev { left: 15px; }
+.slideshow-nav.next { right: 15px; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.media-container.slideshow').forEach(container => {
+    const items = container.querySelectorAll('.media-item');
+    let current = 0;
+    let interval;
+    
+    function showSlide(index) {
+      items.forEach(item => item.classList.remove('active'));
+      current = (index + items.length) % items.length;
+      items[current].classList.add('active');
+    }
+    
+    // Navigation
+    container.querySelector('.next').addEventListener('click', () => {
+      showSlide(current + 1);
+      resetInterval();
+    });
+    container.querySelector('.prev').addEventListener('click', () => {
+      showSlide(current - 1);
+      resetInterval();
+    });
+    
+    // Auto-rotation
+    function startInterval() {
+      interval = setInterval(() => showSlide(current + 1), 5000);
+    }
+    function resetInterval() {
+      clearInterval(interval);
+      startInterval();
+    }
+    
+    // Pause on hover
+    container.addEventListener('mouseenter', () => clearInterval(interval));
+    container.addEventListener('mouseleave', startInterval);
+    
+    startInterval();
+  });
+});
+</script>
