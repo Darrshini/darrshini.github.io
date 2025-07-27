@@ -57,6 +57,8 @@ The project required us to design an arena that not only allowed our LIMO robot 
 </div>
 
 ### **Using RTAB-Mapping** 
+We chose RTAB-Map instead of alternatives like Cartographer or Gmapping because it is able to localize the robot automatically in the map without us having to manually figure out where it is each time. RTAB-Map also works well with ROS 1 (Melodic) and can handle larger environments accurately, which was important for mapping the entire class arena with multiple obstacles and plots.
+
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/completed_map.jpg, /assets/images/completed_map_navigation.jpg" 
@@ -165,5 +167,10 @@ def create_goal(self, x, y, yaw):
 
 ---
 
+## Example of our Limo Robot moving from one plot to another
+
+{% include youtube-video.html id="kO21XZkHZq8" autoplay = "true" %}
+
+---
 **CONCLUSION:**
 This project gave me and my team valuable hands-on experience with multi-waypoint navigation using ROS 1, implementing fault recovery mechanisms, and designing flexible user input. It served as a strong foundation for understanding how autonomous robots can plan and adapt in real-world scenarios.
