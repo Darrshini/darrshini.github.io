@@ -13,7 +13,7 @@ main-image: /limo_robot.jpg
 ---
 
 ---
-## Changi Terminal 1 arena
+## Arena Designing process
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Terminal1.jpg, /assets/images/kinetic_rain.jpg"  
