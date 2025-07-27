@@ -33,13 +33,16 @@ For this project, our goal was to create an autonomous navigation system using t
 <span style="font-size: 10px">Team-designed testing arena (left) and Designed in Solidworks (right)</span>
 
 ### Final Arena Design
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-  {% include image-gallery.html 
-     images="/assets/images/Final_Arena_Solidworks.png, /assets/images/Team7_Arena.jpg" 
-     height="350" 
-  %}
+<div class="arena-slideshow-container">
+
+{% include image-gallery.html 
+   images="/assets/images/Final_Arena_Solidworks.png, /assets/images/Team7_Arena.jpg, /assets/images/Arena_Entrance.jpg, /assets/images/Arena_Windows.jpg, /assets/images/Arena_KineticRain.jpg"
+   height="500"
+   mode="slideshow"
+   captions="Solidworks Final Design|Arena Side view|Arena Entrance view|Arena Top View|Arena Kinetic Rain"
+%}
 </div>
-<span style="font-size: 10px">Final design plan in SolidWorks (left) and implemented design (right)</span>
+
 
 
 ---
