@@ -42,7 +42,6 @@ As seen in the images above, our team initially planned for a more complex desig
    captions="Solidworks Final Design|Arena Side view|Arena Entrance view|Arena Top View|Arena Kinetic Rain"
 %}
 </div>
-
 After evaluating its feasibility and considering the time and budget constraints, we decided to go with a simpler design. The updated design still met the project requirements such as ensuring the Limo Robot can pass through the center of the plot, provided enough challenges for the LIMO robot to navigate through, and effectively represented the key elements of Changi Terminal 1.
 
 
@@ -64,7 +63,6 @@ The project required us to design an arena that not only allowed our LIMO robot 
      height="400" 
   %}
 </div>
-
 Using RTAB-Map, we were able to map the entire class arena, which included all the teams’ plots combined into one large environment. The mapping process allowed the LIMO robot to build a detailed 2D/3D representation of the arena in real time while it navigated through each plot. This map served as the foundation for waypoint navigation and obstacle avoidance, as the robot relied on it to localize itself and plan efficient paths. The results of the mapping can be seen in the images above, visualized using the RViz tool in ROS.
 
 ---
@@ -111,7 +109,6 @@ selected_plots = re.findall(r'\b[0-9]\b', selection)
  - We use a small regex (re.findall) to clean up the input and only keep valid numbers between 0 and 9.
  - It makes the robot more flexible since you can plan multi-stop routes in one go.
 
- - 
 **3. Navigation Control**
 ```python
 for plot_num in selected_plots:
