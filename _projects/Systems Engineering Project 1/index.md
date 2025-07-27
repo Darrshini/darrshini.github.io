@@ -13,8 +13,8 @@ main-image: /limo_robot.jpg
 ---
 
 ---
-## Overview
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+## Changi Terminal 1 arena
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Terminal1.jpg, /assets/images/kinetic_rain.jpg"  
      height="375" 
@@ -24,7 +24,7 @@ main-image: /limo_robot.jpg
 For this project, our goal was to create an autonomous navigation system using the Agilex LIMO robot in a team-designed arena. We based the layout on Changi Airport Terminal 1, including recognizable features like the iconic Kinetic Rain setup to make it more engaging and realistic. The idea was to build a fun and meaningful environment where the robot could map the area using RTAB-Map SLAM and move between waypoints while avoiding obstacles using the move_base navigation stack. 
 
 ### **Initial Arena Design**
-<div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
   {% include image-gallery.html 
      images="/assets/images/Initial_design_plan.jpg, /assets/images/Initial_Design_Solidworks.png" 
      height="350" 
@@ -165,5 +165,5 @@ def create_goal(self, x, y, yaw):
 
 ---
 
-
+**CONCLUSION:**
 This project gave me and my team valuable hands-on experience with multi-waypoint navigation using ROS 1, implementing fault recovery mechanisms, and designing flexible user input. It served as a strong foundation for understanding how autonomous robots can plan and adapt in real-world scenarios.
